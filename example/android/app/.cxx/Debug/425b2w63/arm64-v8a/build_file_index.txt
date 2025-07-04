@@ -1,0 +1,2 @@
+/Users/snaseem/Documents/Projects/react-native-messaging-in-app/android/build/generated/source/codegen/jni/CMakeLists.txt
+/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt

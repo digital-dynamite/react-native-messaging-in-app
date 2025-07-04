@@ -1,0 +1,17 @@
+current directory: /Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+/Users/snaseem/.rbenv/versions/2.7.8/bin/ruby -I /Users/snaseem/.rbenv/versions/2.7.8/lib/ruby/2.7.0 -r ./siteconf20250702-30846-qndwur.rb extconf.rb
+creating Makefile
+
+current directory: /Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR=" clean
+
+current directory: /Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR="
+compiling nkf.c
+linking shared-object nkf.bundle
+ld: warning: -multiply_defined is obsolete
+ld: warning: ignoring duplicate libraries: '-lruby.2.7'
+
+current directory: /Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/vendor/bundle/ruby/2.7.0/gems/nkf-0.2.0/ext/nkf
+make "DESTDIR=" install
+/opt/homebrew/bin/ginstall -c -m 0755 nkf.bundle ./.gem.20250702-30846-1kr80xu

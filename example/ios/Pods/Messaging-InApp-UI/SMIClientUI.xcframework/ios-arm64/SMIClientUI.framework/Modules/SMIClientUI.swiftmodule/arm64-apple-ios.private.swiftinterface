@@ -1,0 +1,794 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name SMIClientUI
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Combine
+import DeveloperToolsSupport
+import Foundation
+import LinkPresentation
+import MobileCoreServices
+import PDFKit
+import PhotosUI
+import SMIClientCore
+@_exported import SMIClientUI
+import SafariServices
+import Swift
+import SwiftUI
+import UIKit
+import UniformTypeIdentifiers
+import WebKit
+import _Concurrency
+import _PhotosUI_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum StringManagement {
+  public static func languages() -> [Swift.String]
+}
+@_hasMissingDesignatedInitializers public class TypingIndicatorModel : SMIClientUI.ChatFeedModel {
+  final public let entries: [any SMIClientCore.ConversationEntry]
+  public var participants: [any SMIClientCore.Participant] {
+    get
+  }
+  public var timestamp: Foundation.Date {
+    get
+  }
+  public var identifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+public enum FontToken : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case navBarTitle
+  case body
+  case title
+  case caption
+  case small
+  case smallBold
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SMIClientUI.FontToken]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SMIClientUI.FontToken] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension SMIClientUI.FontToken : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+}
+@_hasMissingDesignatedInitializers public class PreChatReceiptModel : SMIClientUI.ChatFeedModel {
+  public var conversation: any SMIClientCore.Conversation
+  public var timestamp: Foundation.Date {
+    get
+  }
+  public var identifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+public class TranscriptConfiguration {
+  public init(allowTranscriptDownload: Swift.Bool = true)
+  @objc deinit
+}
+extension UIKit.UIFont {
+  public static func smiBranded(_ token: SMIClientUI.FontToken) -> UIKit.UIFont
+  public static func smiBrandedWeight(_ token: SMIClientUI.FontToken) -> UIKit.UIFont.Weight
+  public static func smiBrandedSize(_ token: SMIClientUI.FontToken) -> CoreFoundation.CGFloat
+}
+extension SwiftUICore.Font {
+  public static func smiBranded(_ token: SMIClientUI.FontToken) -> SwiftUICore.Font
+  public static func smiBrandedWeight(_ token: SMIClientUI.FontToken) -> SwiftUICore.Font.Weight
+  public static func smiBrandedSize(_ token: SMIClientUI.FontToken) -> CoreFoundation.CGFloat
+}
+extension UIKit.UIImage {
+  public static func smiBranded(_ token: SMIClientUI.ImageToken) -> UIKit.UIImage?
+}
+extension SwiftUICore.Image {
+  public static func smiBranded(_ token: SMIClientUI.ImageToken) -> SwiftUICore.Image?
+}
+@_hasMissingDesignatedInitializers public class ProgressIndicatorModel : SMIClientUI.ChatFeedModel {
+  final public let entry: any SMIClientCore.ConversationEntry
+  public var participant: any SMIClientCore.Participant {
+    get
+  }
+  public var timestamp: Foundation.Date {
+    get
+  }
+  public var identifier: Swift.String {
+    get
+  }
+  @objc deinit
+}
+extension SMIClientUI.ColorToken : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+}
+public protocol ChatFeedModel {
+  var timestamp: Foundation.Date { get }
+  var identifier: Swift.String { get }
+}
+public class AttachmentConfiguration {
+  public init(endUserToAgent: Swift.Bool = true)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 14.1, *)
+@objc @_Concurrency.MainActor @preconcurrency final public class InterfaceViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public static var sdkVersion: Swift.String?
+  @_Concurrency.MainActor @preconcurrency final public var modalDismissButton: UIKit.UIBarButtonItem?
+  @_Concurrency.MainActor @preconcurrency @objc override final public var navigationItem: UIKit.UINavigationItem {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency convenience public init(_ config: SMIClientUI.UIConfiguration, isModal: Swift.Bool = false)
+  @_Concurrency.MainActor @preconcurrency convenience public init(_ config: SMIClientUI.UIConfiguration, isModal: Swift.Bool = false, preChatFieldValueProvider: SMIClientUI.Interface.PreChatFieldValueClosure? = nil, chatFeedViewBuilder: (any SMIClientUI.ChatFeedViewBuilder)? = nil)
+  @objc deinit
+}
+extension SMIClientUI.InterfaceViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewWillAppear(_ animated: Swift.Bool)
+}
+extension Swift.String {
+  public static func smiLocalized(_ token: SMIClientUI.StringManagement.Localization) -> Swift.String
+  public static func smiAccessible(_ token: SMIClientUI.StringManagement.Accessibility) -> Swift.String
+  public static func smiLocalizedWithFormat(_ token: SMIClientUI.StringManagement.Localization, args: any Swift.CVarArg...) -> Swift.String
+  public static func smiAccessibleWithFormat(_ token: SMIClientUI.StringManagement.Accessibility, args: any Swift.CVarArg...) -> Swift.String
+  public static func smiLanguages() -> [Swift.String]
+}
+@available(iOS 16.0, *)
+public struct FlowLayout : SwiftUICore.Layout {
+  public init(spacing: CoreFoundation.CGFloat = 8)
+  public func sizeThatFits(proposal: SwiftUICore.ProposedViewSize, subviews: SMIClientUI.FlowLayout.Subviews, cache: inout ()) -> CoreFoundation.CGSize
+  public func placeSubviews(in bounds: CoreFoundation.CGRect, proposal: SwiftUICore.ProposedViewSize, subviews: SMIClientUI.FlowLayout.Subviews, cache: inout ())
+  @available(iOS 16.0, *)
+  public typealias AnimatableData = SwiftUICore.EmptyAnimatableData
+  @available(iOS 16.0, *)
+  public typealias Cache = ()
+}
+@available(iOS 14.1, *)
+@_Concurrency.MainActor @preconcurrency public struct Interface : SwiftUICore.View {
+  public typealias PreChatFieldValueClosure = ((_ preChatFields: [any SMIClientCore.PreChatField]) async throws -> [any SMIClientCore.PreChatField])
+  @_Concurrency.MainActor @preconcurrency public init(_ config: SMIClientUI.UIConfiguration, preChatFieldValueProvider: SMIClientUI.Interface.PreChatFieldValueClosure? = nil, chatFeedViewBuilder: (any SMIClientUI.ChatFeedViewBuilder)? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var sdkVersion: Swift.String? {
+    get
+  }
+  @available(iOS 14.1, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s11SMIClientUI9InterfaceV4bodyQrvp", 0) __
+}
+public class AgentConfiguration {
+  public init(useProgressIndicators: Swift.Bool = true)
+  @objc deinit
+}
+public enum ImageToken : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case iconSending
+  case iconSent
+  case iconDelivered
+  case iconRead
+  case iconFailed
+  case iconOffline
+  case iconCheckMark
+  case iconPreChatReceipt
+  case iconImagePlaceholder
+  case iconMessageBadge
+  case actionSend
+  case actionMenu
+  case actionCancel
+  case actionDismiss
+  case chevronRight
+  case actionJumpTo
+  case actionShare
+  case avatarBot
+  case avatarUser
+  case actionSearch
+  case noSearchResults
+  case emptyState
+  case backButtonArrow
+  case iconClock
+  case actionParticipantMenu
+  case iconFormOptionSelected
+  case iconFormCalendar
+  case iconFormFailed
+  case iconForm
+  case iconError
+  case iconCSV
+  case iconExcel
+  case iconTxt
+  case iconWord
+  case iconXML
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SMIClientUI.ImageToken]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SMIClientUI.ImageToken] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension SMIClientUI.ImageToken : Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  public typealias ID = Swift.String
+}
+extension SMIClientUI.StringManagement {
+  public enum Localization : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.Identifiable {
+    public var id: Swift.String {
+      get
+    }
+    public var identifier: Swift.String {
+      get
+    }
+    case chatFeedTitle
+    case placeholder
+    case send
+    case newMessages
+    case sending
+    case failed
+    case delivered
+    case sent
+    case read
+    case yesterday
+    case today
+    case reconnecting
+    case connected
+    case failedAlertTitle
+    case cameraPermissionAlertTitle
+    case failedAlertMessage
+    case cameraPermissionAlertMessage
+    case alertActionRetry
+    case actionSettings
+    case actionCancel
+    case participantChangedJoined
+    case participantChangedLeft
+    case separator
+    case unknown
+    case preChatRequired
+    case preChatSubmitButton
+    case preChatTitle
+    case preChatErrorFieldRequired
+    case preChatErrorValideEmailFormat
+    case preChatErrorValideNumberFormat
+    case preChatErrorValidatePhoneFormat
+    case actionMenuPhotoSend
+    case actionMenuPhotoTake
+    case actionMenuFileSend
+    case transferRequested
+    case preChatCellText
+    case preChatSubmittedHeader
+    case preChatBackButton
+    case choiceListNoneOption
+    case fileSizeMegabyte
+    case imageShareHeader
+    case gifShareHeader
+    case pdfShareHeader
+    case imageSavedMessage
+    case attachmentSaveFailedMessage
+    case maxAttachmentsReach
+    case photosPermissonDeniedTitle
+    case photosPermissonDeniedmessage
+    case attachmentTooLarge
+    case unsupportedFileType
+    case routingFailedMessage
+    case routingWaitResolvedMinutes
+    case routingWaitResolvedShort
+    case routingInitialAgent
+    case multipleMessageCounter
+    case noRecentSearchesHeader
+    case noMatchingResultsHeader
+    case noMatchingResultsBody
+    case messageSearchHeader
+    case recentSearchHeader
+    case messageSeachBarPlaceholderText
+    case messageSearchTodayTimestamp
+    case messageSearchYesterdayTimestamp
+    case timestampUsersName
+    case noRecentSearchesBody
+    case actionCopy
+    case copyText
+    case copyAttachment
+    case messageSearchBack
+    case outsideOfBusinessHours
+    case participantClientMenuTitle
+    case startConversationButton
+    case midConvoPreChatErrorMessage
+    case formMessageNextButton
+    case formMessageSubmitButton
+    case formMessageBackButton
+    case termsAndConditionsAccept
+    case termsAndConditionsError
+    case formMessageExitScreenTitle
+    case formMessageExitScreenSubtitle
+    case formMessageExitScreenConfirm
+    case formMessageExitScreenCancel
+    case formMessageNavigationBackButton
+    case formMessageResultSuccess
+    case formMessageResultSubmitting
+    case formMessageResultError
+    case formMessageRequired
+    case formMessageTextInvaidEmail
+    case formMessageTextInvalidUrl
+    case formMessageTextInputRequiredMessage
+    case formMessageOptionRequiredMessage
+    case formMessageDivider
+    case unknownEntryMessage
+    case transcriptRequestButton
+    case transcriptTitle
+    case transcriptLeaveButton
+    case transcriptCancelButton
+    case transcriptLeaveTitle
+    case transcriptLeaveSubTitle
+    case transcriptErrorMessage
+    case transcriptAlertSaveFailed
+    case transcriptAlertSaveSucceed
+    case transcriptAlertTitle
+    case transcriptAlertButtonTitle
+    case actionMenuTitle
+    case progressIndicatorSingle
+    case progressIndicatorTwo
+    case progressIndicatorMultiple
+    case progressIndicatorBot
+    case endChatButton
+    case endChatTitle
+    case endChatSubtitle
+    case endChatConfirmationButton
+    case endChatCancelButton
+    case endChatErrorMessage
+    case fallbackMessageCloseButton
+    case streamingTextCursor
+    case chatBadgeOverlayCount
+    case citationInlineTitle
+    case citationSourceButtonTitle
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [SMIClientUI.StringManagement.Localization]
+    public typealias ID = Swift.String
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [SMIClientUI.StringManagement.Localization] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public enum ColorToken : Swift.String, Swift.CaseIterable, Swift.Codable {
+  case primary
+  case primaryVariant
+  case onPrimary
+  case secondary
+  case onSecondary
+  case secondaryActive
+  case secondaryHighlight
+  case onSecondaryVariant
+  case background
+  case onBackground
+  case surface
+  case onSurface
+  case surfaceHighlight
+  case surfaceVariant
+  case onSurfaceVariant
+  case surfaceSecondary
+  case surfaceSecondaryVariant
+  case tertiary
+  case highlight
+  case error
+  case warning
+  case success
+  case transparent
+  case backgroundTransparent
+  case surfaceTransparent
+  case onSecondaryTransparent
+  case onSecondarySemiTransparent
+  case onBackgroundSemiTransparent
+  case colorFileIconXml
+  case colorFileIconCsv
+  case colorFileIconTxt
+  case colorFileIconWord
+  case colorFileIconExcel
+  case navigationBackground
+  case navigationText
+  case navigationIcon
+  case chatBackground
+  case ctaButtons
+  case ctaButtonsText
+  case bannerText
+  case bannerBackground
+  case imageViewerBackground
+  case sentBubbleText
+  case sentBubbleBackground
+  case receivedBubbleText
+  case receivedBubbleBackground
+  case receivedBubbleBorder
+  case typingIndicatorText
+  case timestamp
+  case avatarBackground
+  case avatarForeground
+  case chatSeparator
+  case unknownEntryErrorIconBackground
+  case iconError
+  case buttonText
+  case buttonBackground
+  case buttonBorder
+  case buttonFocusText
+  case buttonFocusBackground
+  case buttonDisabledText
+  case buttonDisabledSelectedText
+  case buttonDisabledSelectedBackground
+  case buttonDisabledBackground
+  case listPickerTitleText
+  case listPickerTitleBackground
+  case cancelButtonActive
+  case cancelButtonBGActive
+  case cancelButtonPressed
+  case cancelButtonBGPressed
+  case cameraButtonActive
+  case cameraButtonBGActive
+  case cameraButtonFocused
+  case cameraButtonBGFocused
+  case cameraButtonPressed
+  case cameraButtonBGPressed
+  case cardBackground
+  case cardBorder
+  case cardHeadlineText
+  case cardSubheaderText
+  case carouselTitleText
+  case carouselSubTitleText
+  case carouselButtonText
+  case carouselButtonTextDisabled
+  case carouselButtonBackground
+  case carouselBackground
+  case carouselProgressIndicatorActive
+  case carouselProgressIndicatorInactive
+  case carouselSelectedHighlight
+  case carouselSelectedIconForeground
+  case carouselSelectedIconBackground
+  case carouselImageBackground
+  case iconForeground
+  case iconBackground
+  case iconBackgroundSecondary
+  case iconDisabled
+  case inputBackground
+  case inputBorder
+  case inputText
+  case inputPlaceholder
+  case loadingScreenTextPlaceholder
+  case loadingScreenSentBubbleBackground
+  case loadingScreenReceivedBubbleBackground
+  case loadingScreenAvatar
+  case loadingScreenBackground
+  case loadingScreenInputTextPlaceholder
+  case messageSearchInputBar
+  case messageSearchHighlightBorderAgent
+  case messageSearchHighlightBorderUser
+  case messageSearchHighlightTextAgent
+  case messageSearchHighlightTextUser
+  case messageSearchHighlightBackgroundUser
+  case messageSearchHighlightBackgroundAgent
+  case participantClientMenuBackground
+  case participantClientMenuItemText
+  case participantClientMenuItemBackground
+  case participantClientMenuItemIcon
+  case participantClientMenuSearchIcon
+  case participantClientMenuItemFocusBackground
+  case participantClientMenuButton
+  case participantClientMenuButtonText
+  case participantClientMenuButtonBorder
+  case participantClientMenuButtonSelected
+  case prechatBackground
+  case prechatBorder
+  case prechatText
+  case prechatTextActive
+  case prechatButton
+  case prechatButtonActive
+  case prechatButtonText
+  case prechatInputBackground
+  case prechatError
+  case prechatDisabled
+  case urlText
+  case formSubmitButton
+  case formSubmitButtonText
+  case formNextButton
+  case formNextButtonText
+  case formBackButton
+  case formBackButtonText
+  case formBackground
+  case formTitleText
+  case formSubTitleText
+  case formOptionTitle
+  case formOptionButtonBackground
+  case formOptionButtonText
+  case formOptionButtonBorder
+  case formOptionButtonBorderSelected
+  case formOptionButtonBorderRequired
+  case formOptionTextError
+  case formInputFooterLabel
+  case formInputBorder
+  case formInputBorderActive
+  case formInputBorderError
+  case formInputTitleText
+  case formInputText
+  case formInputBackground
+  case formConfirmationButtonLeave
+  case formConfirmationButtonLeaveText
+  case formConfirmationButtonCancel
+  case formConfirmationButtonCancelText
+  case formConfirmationButtonCancelBorder
+  case formProressBarForeground
+  case formCellIconBackgroundDisabled
+  case formCellIconDisabled
+  case formOptionButtonIcon
+  case formDatePickerIcon
+  case transcriptBackground
+  case transcriptText
+  case transcriptButtonLeave
+  case transcriptButtonLeaveBorder
+  case transcriptButtonLeaveText
+  case transcriptButtonCancel
+  case transcriptButtonCancelBorder
+  case transcriptButtonCancelText
+  case transcriptProgressIndicator
+  case transcriptProgressIndicatorBackground
+  case progressIndicatorText
+  case progressIndicatorIconOuter
+  case progressIndicatorIconInner
+  case notificationBadgeBackground
+  case notificationBadgeIcon
+  case notificationBadgeOutline
+  case notificationBadgeCounterBackground
+  case notificationBadgeCounterText
+  case endChatConfirmationBackground
+  case endChatConfirmationText
+  case endChatConfirmationButtonBackground
+  case endChatConfirmationButtonBorder
+  case endChatConfirmationButtonText
+  case endChatConfirmationButtonCancelBackground
+  case endChatConfirmationButtonCancelBorder
+  case endChatConfirmationButtonCancelText
+  case endChatConfirmationProgressIndicator
+  case fallbackMessageBackground
+  case fallbackMessageConfirmationText
+  case fallbackMessageConfirmationButton
+  case fallbackMessageConfirmationButtonText
+  case receivedMarkdownLinkText
+  case receivedMarkdownCodeBackground
+  case receivedMarkdownCodeText
+  case receivedMarkdownHorizontalRule
+  case citationsSourceButtonBackground
+  case citationsSourceButtonText
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SMIClientUI.ColorToken]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SMIClientUI.ColorToken] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ChatFeedRenderMode : Swift.String, Swift.CaseIterable, Swift.Identifiable {
+  public var id: Swift.String {
+    get
+  }
+  case existing
+  case replace
+  case none
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [SMIClientUI.ChatFeedRenderMode]
+  public typealias ID = Swift.String
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [SMIClientUI.ChatFeedRenderMode] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct ZoomableImage : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s11SMIClientUI13ZoomableImageV4bodyQrvp", 0) __
+}
+@objc @available(iOS 14.1, *)
+public class UIConfiguration : SMIClientCore.Configuration, Combine.ObservableObject {
+  final public let conversationId: Foundation.UUID
+  final public let createConversationOnSubmit: Swift.Bool
+  final public let urlDisplayMode: SMIClientUI.UrlDisplayMode
+  public var transcriptConfiguration: SMIClientUI.TranscriptConfiguration
+  public var attachmentConfiguration: SMIClientUI.AttachmentConfiguration
+  public var agentConfiguration: SMIClientUI.AgentConfiguration
+  public var conversationOptionsConfiguration: SMIClientUI.ConversationOptionsConfiguration
+  public init(serviceAPI: Foundation.URL, organizationId: Swift.String, developerName: Swift.String, remoteLocaleMap: [Swift.String : Swift.String]? = nil, userVerificationRequired: Swift.Bool = false, conversationId: Foundation.UUID, createConversationOnSubmit: Swift.Bool = true, urlDisplayMode: SMIClientUI.UrlDisplayMode = .inlineBrowser)
+  public init?(url: Foundation.URL, userVerificationRequired: Swift.Bool = false, conversationId: Foundation.UUID, remoteLocaleMap: [Swift.String : Swift.String]? = nil, createConversationOnSubmit: Swift.Bool = true, urlDisplayMode: SMIClientUI.UrlDisplayMode = .inlineBrowser)
+  convenience public init(configuration: SMIClientCore.Configuration, conversationId: Foundation.UUID, remoteLocaleMap: [Swift.String : Swift.String]? = nil, createConversationOnSubmit: Swift.Bool = true, urlDisplayMode: SMIClientUI.UrlDisplayMode = .inlineBrowser)
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  @available(iOS 14.1, *)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class DateBreakModel : SMIClientUI.ChatFeedModel {
+  public var timestamp: Foundation.Date
+  public var identifier: Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ChatFeedProxy : Foundation.ObservableObject {
+  @Combine.Published @_projectedValueProperty($screenSize) public var screenSize: CoreFoundation.CGSize {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $screenSize: Combine.Published<CoreFoundation.CGSize>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  @Combine.Published @_projectedValueProperty($safeAreaInsets) public var safeAreaInsets: SwiftUICore.EdgeInsets {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    _modify
+  }
+  public var $safeAreaInsets: Combine.Published<SwiftUICore.EdgeInsets>.Publisher {
+    get
+    @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
+    set
+  }
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class ModalInterfaceViewController : UIKit.UINavigationController {
+  @_Concurrency.MainActor @preconcurrency final public var modalDismissButton: UIKit.UIBarButtonItem?
+  @_Concurrency.MainActor @preconcurrency public init(_ config: SMIClientUI.UIConfiguration, preChatFieldValueProvider: SMIClientUI.Interface.PreChatFieldValueClosure? = nil, chatFeedViewBuilder: (any SMIClientUI.ChatFeedViewBuilder)? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ConversationEntryModel : SMIClientUI.ChatFeedModel, Foundation.ObservableObject {
+  final public let entry: any SMIClientCore.ConversationEntry
+  public var timestamp: Foundation.Date {
+    get
+  }
+  public var identifier: Swift.String {
+    get
+  }
+  public var isLastInSection: Swift.Bool {
+    get
+  }
+  public var isFirstInSection: Swift.Bool {
+    get
+  }
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+public enum Logging {
+  public static var level: SMIClientCore.LoggingLevel
+}
+public class ConversationOptionsConfiguration {
+  public init(allowEndChat: Swift.Bool = true)
+  @objc deinit
+}
+extension SMIClientUI.StringManagement {
+  public enum Accessibility : Swift.String, Swift.CaseIterable, Swift.Codable, Swift.Identifiable {
+    public var id: Swift.String {
+      get
+    }
+    public var identifier: Swift.String {
+      get
+    }
+    case feedInputText
+    case messageReceived
+    case messageSending
+    case localMessageId
+    case remoteMessageId
+    case systemMessageId
+    case networkReconnecting
+    case networkConnected
+    case typingStart
+    case typingStop
+    case typingIndicator
+    case progressIndicatorMessage
+    case participantChangedJoined
+    case participantChangedLeft
+    case failed
+    case failedHint
+    case preChatRequired
+    case clearSearchText
+    case agentAvatarIcon
+    case botAvatarIcon
+    case userAvatarIcon
+    case feedActionMenu
+    case badgeAction
+    case messageReceivedScrolled
+    case loadingScreen
+    case backButtonPrechat
+    case exitButtonPrechat
+    case jumpToPhotoButton
+    case sharePhotoButton
+    case downloadPhotoButton
+    case imageMessage
+    case checkBoxSelected
+    case checkBoxNotSelected
+    case cameraCapturingPhoto
+    case linkPreview
+    case outsideOfBusinessHours
+    case resubmitPreChat
+    case formBackButton
+    case formRequired
+    case formNewScreen
+    case formOptionSlected
+    case formTextInput
+    case formTextInputRequired
+    case participantClientMenuTitle
+    case carouselPlaceholderImage
+    case carouselSelectedIcon
+    case carouselImage
+    case transcriptSaveButton
+    case transcriptShareButton
+    case transcriptBackButton
+    case streamingMessageReadout
+    case preChatErrorReadout
+    case formErrorReadout
+    case termsAndConditionsAccepted
+    case termsAndConditionsNotAccepted
+    case carouselIndicator
+    case carouselIndicatorDot
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [SMIClientUI.StringManagement.Accessibility]
+    public typealias ID = Swift.String
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [SMIClientUI.StringManagement.Accessibility] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public protocol ChatFeedViewBuilder {
+  typealias RenderModeClosure = (_ model: any SMIClientUI.ChatFeedModel) -> SMIClientUI.ChatFeedRenderMode
+  typealias CompleteViewClosure = (_ model: any SMIClientUI.ChatFeedModel, _ client: (any SMIClientCore.ConversationClient)?) -> any SwiftUICore.View
+  var renderMode: Self.RenderModeClosure? { get }
+  @SwiftUICore.ViewBuilder var completeView: Self.CompleteViewClosure? { get }
+}
+public enum UrlDisplayMode : Swift.String {
+  case externalBrowser
+  case inlineBrowser
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension SMIClientUI.FontToken : Swift.Equatable {}
+extension SMIClientUI.FontToken : Swift.Hashable {}
+extension SMIClientUI.FontToken : Swift.RawRepresentable {}
+extension SMIClientUI.ImageToken : Swift.Equatable {}
+extension SMIClientUI.ImageToken : Swift.Hashable {}
+extension SMIClientUI.ImageToken : Swift.RawRepresentable {}
+extension SMIClientUI.ColorToken : Swift.Equatable {}
+extension SMIClientUI.ColorToken : Swift.Hashable {}
+extension SMIClientUI.ColorToken : Swift.RawRepresentable {}
+@available(iOS 14.1, *)
+extension SMIClientUI.Interface : Swift.Sendable {}
+extension SMIClientUI.StringManagement.Localization : Swift.Equatable {}
+extension SMIClientUI.StringManagement.Localization : Swift.Hashable {}
+extension SMIClientUI.StringManagement.Localization : Swift.RawRepresentable {}
+extension SMIClientUI.ChatFeedRenderMode : Swift.Equatable {}
+extension SMIClientUI.ChatFeedRenderMode : Swift.Hashable {}
+extension SMIClientUI.ChatFeedRenderMode : Swift.RawRepresentable {}
+extension SMIClientUI.ZoomableImage : Swift.Sendable {}
+extension SMIClientUI.StringManagement.Accessibility : Swift.Equatable {}
+extension SMIClientUI.StringManagement.Accessibility : Swift.Hashable {}
+extension SMIClientUI.StringManagement.Accessibility : Swift.RawRepresentable {}
+extension SMIClientUI.UrlDisplayMode : Swift.Equatable {}
+extension SMIClientUI.UrlDisplayMode : Swift.Hashable {}
+extension SMIClientUI.UrlDisplayMode : Swift.RawRepresentable {}

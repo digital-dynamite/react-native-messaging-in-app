@@ -1,0 +1,6 @@
+module MessagingInApp {
+  umbrella header "MessagingInApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/CMakeFiles/appmodules.dir
+/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir
+/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/MessagingInAppSpec_autolinked_build/CMakeFiles/edit_cache.dir
+/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/MessagingInAppSpec_autolinked_build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,23 @@
+# ninja log v5
+0	7	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/x86/CMakeFiles/cmake.verify_globs	33400006ac489538
+5	1097	1751632504549276037	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/States.cpp.o	79d852049e34c7
+4	1319	1751632504768600764	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/Props.cpp.o	ad35d03ddd45b544
+1428	1495	1751632504946512806	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/x86/libappmodules.so	407bca50749a9b58
+4	1139	1751632504590893347	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/EventEmitters.cpp.o	6e647bafe90141c7
+0	1564	1751598383884666184	CMakeFiles/appmodules.dir/OnLoad.cpp.o	e1884ac22641744f
+4	1380	1751632504832174393	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ShadowNodes.cpp.o	643715b07a0aa44a
+4	1223	1751632504675078255	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/MessagingInAppSpecJSI-generated.cpp.o	c2edccf960cd9787
+4	1324	1751632504775756204	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/MessagingInAppSpec-generated.cpp.o	fd27e69be327ebdf
+4	1428	1751632504878398107	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ComponentDescriptors.cpp.o	b70b66c2d602a56d
+3	1399	1751632504850563304	CMakeFiles/appmodules.dir/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	469f96581175f360
+0	7	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/x86/CMakeFiles/cmake.verify_globs	33400006ac489538
+4	734	1751633080985286487	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/States.cpp.o	79d852049e34c7
+4	817	1751633081068335164	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/EventEmitters.cpp.o	6e647bafe90141c7
+4	919	1751633081172079510	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/MessagingInAppSpecJSI-generated.cpp.o	c2edccf960cd9787
+4	965	1751633081217960943	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/Props.cpp.o	ad35d03ddd45b544
+3	1024	1751633081276597907	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/MessagingInAppSpec-generated.cpp.o	fd27e69be327ebdf
+4	1048	1751633081299872731	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ShadowNodes.cpp.o	643715b07a0aa44a
+3	1116	1751633081366161121	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ComponentDescriptors.cpp.o	b70b66c2d602a56d
+3	1137	1751633081387871344	CMakeFiles/appmodules.dir/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	469f96581175f360
+1137	1203	1751633081454579489	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/x86/libappmodules.so	407bca50749a9b58
+0	7	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/x86/CMakeFiles/cmake.verify_globs	33400006ac489538

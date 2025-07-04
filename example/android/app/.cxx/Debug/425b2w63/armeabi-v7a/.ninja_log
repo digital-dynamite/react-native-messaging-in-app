@@ -1,0 +1,23 @@
+# ninja log v5
+0	7	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/CMakeFiles/cmake.verify_globs	73812f180e834d73
+4	1336	1751632501729311046	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/MessagingInAppSpecJSI-generated.cpp.o	239e068070b5d73e
+4	1378	1751632501771136897	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/MessagingInAppSpec-generated.cpp.o	8b4da7e9c555cb7b
+5	1121	1751632501510261027	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/States.cpp.o	f9e00df4f861b440
+4	1357	1751632501749825785	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/Props.cpp.o	b6fea694e4d1f106
+4	1398	1751632501791322095	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ShadowNodes.cpp.o	4b63994f5f83d903
+4	1508	1751632501900349231	CMakeFiles/appmodules.dir/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	98c64d9e3db961be
+4	1249	1751632501638721780	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/EventEmitters.cpp.o	1aa788a2ed7c2e1b
+0	1501	1751598381300433324	CMakeFiles/appmodules.dir/OnLoad.cpp.o	c86dfe138f175f29
+4	1511	1751632501903937930	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ComponentDescriptors.cpp.o	3ded32729a9585e0
+1511	1580	1751632501969367887	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/armeabi-v7a/libappmodules.so	90e641c588ad0e56
+0	8	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/CMakeFiles/cmake.verify_globs	73812f180e834d73
+5	787	1751633079385575272	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/States.cpp.o	f9e00df4f861b440
+4	897	1751633079495704945	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/EventEmitters.cpp.o	1aa788a2ed7c2e1b
+4	985	1751633079584539318	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/MessagingInAppSpecJSI-generated.cpp.o	239e068070b5d73e
+4	1036	1751633079633921210	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/Props.cpp.o	b6fea694e4d1f106
+4	1037	1751633079635386269	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/MessagingInAppSpec-generated.cpp.o	8b4da7e9c555cb7b
+5	1137	1751633079734928480	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ShadowNodes.cpp.o	4b63994f5f83d903
+4	1160	1751633079758535434	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ComponentDescriptors.cpp.o	3ded32729a9585e0
+4	1204	1751633079801546416	CMakeFiles/appmodules.dir/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	98c64d9e3db961be
+1204	1271	1751633079869032404	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/armeabi-v7a/libappmodules.so	90e641c588ad0e56
+0	8	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/armeabi-v7a/CMakeFiles/cmake.verify_globs	73812f180e834d73

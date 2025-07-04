@@ -1,0 +1,23 @@
+# ninja log v5
+0	23	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/arm64-v8a/CMakeFiles/cmake.verify_globs	f83d1e8808bdf150
+7	2260	1751632499562050250	CMakeFiles/appmodules.dir/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	87241a4f73153f5f
+8	1890	1751632499191525996	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/EventEmitters.cpp.o	a03d8e3400c6b071
+1	2054	1751598378752859079	CMakeFiles/appmodules.dir/OnLoad.cpp.o	6a07e7d9be46d883
+8	1852	1751632499146438945	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/States.cpp.o	f8e265e962c29c93
+8	2048	1751632499349882796	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/Props.cpp.o	a4d60f8c67a304cc
+8	2131	1751632499433979372	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ShadowNodes.cpp.o	72559f8ca07fb8c6
+8	1963	1751632499265404389	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/MessagingInAppSpecJSI-generated.cpp.o	a38f008adde5dfa3
+7	2077	1751632499379160263	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/MessagingInAppSpec-generated.cpp.o	e2c5ce38e5764444
+7	2201	1751632499502564195	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ComponentDescriptors.cpp.o	63cc451815fa3ab
+2260	2476	1751632499777474862	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/arm64-v8a/libappmodules.so	a1a4873771a4667d
+0	11	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/arm64-v8a/CMakeFiles/cmake.verify_globs	f83d1e8808bdf150
+6	1801	1751633077518154133	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/States.cpp.o	f8e265e962c29c93
+6	1829	1751633077553024307	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/EventEmitters.cpp.o	a03d8e3400c6b071
+6	1882	1751633077606125745	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/MessagingInAppSpecJSI-generated.cpp.o	a38f008adde5dfa3
+6	1988	1751633077710654309	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/MessagingInAppSpec-generated.cpp.o	e2c5ce38e5764444
+6	2012	1751633077735831781	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/Props.cpp.o	a4d60f8c67a304cc
+6	2053	1751633077777033200	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ShadowNodes.cpp.o	72559f8ca07fb8c6
+6	2126	1751633077846679964	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ComponentDescriptors.cpp.o	63cc451815fa3ab
+6	2172	1751633077894316543	CMakeFiles/appmodules.dir/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	87241a4f73153f5f
+2172	2395	1751633078118182309	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/arm64-v8a/libappmodules.so	a1a4873771a4667d
+2	25	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/arm64-v8a/CMakeFiles/cmake.verify_globs	f83d1e8808bdf150

@@ -1,0 +1,37 @@
+{
+  "buildFiles": [
+    "/Users/snaseem/Documents/Projects/react-native-messaging-in-app/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/snaseem/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/snaseem/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "react_codegen_MessagingInAppSpec::@b89e07268cf55d9f87b0": {
+      "artifactName": "react_codegen_MessagingInAppSpec",
+      "abi": "x86",
+      "runtimeFiles": []
+    },
+    "appmodules::@6890427a1f51a3e7e1df": {
+      "artifactName": "appmodules",
+      "abi": "x86",
+      "output": "/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/x86/libappmodules.so",
+      "runtimeFiles": [
+        "/Users/snaseem/.gradle/caches/8.13/transforms/72cde7dc85b5006383f56c98fcfedfa5/transformed/fbjni-0.7.0/prefab/modules/fbjni/libs/android.x86/libfbjni.so",
+        "/Users/snaseem/.gradle/caches/8.13/transforms/8cb416b8178cb0e7f140959230f7f0bf/transformed/react-android-0.79.2-debug/prefab/modules/jsi/libs/android.x86/libjsi.so",
+        "/Users/snaseem/.gradle/caches/8.13/transforms/8cb416b8178cb0e7f140959230f7f0bf/transformed/react-android-0.79.2-debug/prefab/modules/reactnative/libs/android.x86/libreactnative.so"
+      ]
+    }
+  }
+}

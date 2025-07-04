@@ -1,0 +1,23 @@
+# ninja log v5
+0	8	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/x86_64/CMakeFiles/cmake.verify_globs	57d43cc7d0f6ad6d
+3	1437	1751632506768039451	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ComponentDescriptors.cpp.o	b01f20783a27ba3
+4	1069	1751632506404182596	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/States.cpp.o	ea81465e170a4540
+3	1274	1751632506605187120	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/Props.cpp.o	4e18cd72ab30c6e8
+3	1154	1751632506488734795	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/EventEmitters.cpp.o	bbf5c39a06228243
+0	1709	1751598386604934386	CMakeFiles/appmodules.dir/OnLoad.cpp.o	4e6417300fab40cf
+3	1198	1751632506534622219	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/MessagingInAppSpecJSI-generated.cpp.o	33c85dcf3024bfff
+3	1272	1751632506604333539	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/MessagingInAppSpec-generated.cpp.o	180752acf6ba51ea
+3	1448	1751632506782797038	CMakeFiles/appmodules.dir/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	fd73c0fe04707d19
+4	1358	1751632506692236396	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ShadowNodes.cpp.o	c4363dde09faaa54
+1449	1725	1751632507045266987	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/x86_64/libappmodules.so	4187429c7cbe9844
+0	8	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/x86_64/CMakeFiles/cmake.verify_globs	57d43cc7d0f6ad6d
+4	761	1751633082618227232	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/States.cpp.o	ea81465e170a4540
+4	867	1751633082725492828	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/EventEmitters.cpp.o	bbf5c39a06228243
+4	909	1751633082767614424	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/MessagingInAppSpecJSI-generated.cpp.o	33c85dcf3024bfff
+4	982	1751633082839510757	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/Props.cpp.o	4e18cd72ab30c6e8
+3	985	1751633082843265178	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/MessagingInAppSpec-generated.cpp.o	180752acf6ba51ea
+4	1058	1751633082916089564	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ShadowNodes.cpp.o	c4363dde09faaa54
+3	1127	1751633082984206601	CMakeFiles/appmodules.dir/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/generated/autolinking/src/main/jni/autolinking.cpp.o	fd73c0fe04707d19
+4	1142	1751633082999251409	MessagingInAppSpec_autolinked_build/CMakeFiles/react_codegen_MessagingInAppSpec.dir/react/renderer/components/MessagingInAppSpec/ComponentDescriptors.cpp.o	b01f20783a27ba3
+1142	1209	1751633083065662592	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/build/intermediates/cxx/Debug/425b2w63/obj/x86_64/libappmodules.so	4187429c7cbe9844
+0	7	0	/Users/snaseem/Documents/Projects/react-native-messaging-in-app/example/android/app/.cxx/Debug/425b2w63/x86_64/CMakeFiles/cmake.verify_globs	57d43cc7d0f6ad6d

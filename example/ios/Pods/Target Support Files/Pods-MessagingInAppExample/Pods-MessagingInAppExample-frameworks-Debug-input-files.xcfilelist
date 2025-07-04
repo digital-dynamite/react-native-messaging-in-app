@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-MessagingInAppExample/Pods-MessagingInAppExample-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Messaging-InApp-Core/SMIClientCore.framework/SMIClientCore
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Messaging-InApp-UI/SMIClientUI.framework/SMIClientUI
+${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes
