@@ -32,6 +32,31 @@ try {
 }
 ```
 
+## UUID Management
+
+For persistent conversations across app sessions, you can pass a custom `conversationId`:
+
+```js
+import { launchChat, createConversationId } from 'react-native-messaging-in-app';
+
+// Generate a new UUID for this conversation
+const conversationId = createConversationId();
+
+const config = {
+  // ... other config options
+  conversationId: conversationId
+};
+
+await launchChat(config);
+```
+
+### Available UUID Utilities
+
+- `createConversationId()`: Generates a new UUID for conversations
+- `generateUUID()`: Generates a random UUID v4 string
+- `isValidUUID(uuid)`: Validates if a string is a valid UUID format
+```
+
 ## Configuration Options
 
 The `launchChat` function accepts a configuration object with the following properties:
@@ -44,6 +69,8 @@ The `launchChat` function accepts a configuration object with the following prop
 - `chatMedium` (string, optional): Medium identifier for the chat
 - `brand` (string, optional): Brand identifier
 - `country` (string, optional): Country code
+- `conversationId` (string, optional): Custom UUID for persistent conversations
+
 
 ## Platform Setup
 

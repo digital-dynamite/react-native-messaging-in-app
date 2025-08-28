@@ -40,8 +40,17 @@ class MessagingInAppModule(reactContext: ReactApplicationContext) : ReactContext
             val url = URL(serviceAPI)
             val coreConfig = CoreConfiguration(url, organizationId, developerName)
 
-            // Generate conversation ID (use consistent ID for persistent conversations)
-            val conversationID = UUID.randomUUID()
+            // Use conversation ID from config if provided, otherwise generate a new one
+            val conversationID = if (config.hasKey("conversationId")) {
+                try {
+                    UUID.fromString(config.getString("conversationId"))
+                } catch (e: IllegalArgumentException) {
+                    Log.w("MessagingModule", "Invalid conversationId format, generating new UUID")
+                    UUID.randomUUID()
+                }
+            } else {
+                UUID.randomUUID()
+            }
 
             // Create a core client from the config
             val coreClient = CoreClient.Factory.create(reactApplicationContext, coreConfig)

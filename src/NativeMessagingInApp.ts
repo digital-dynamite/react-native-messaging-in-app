@@ -9,6 +9,7 @@ export interface MessagingConfig {
   chatMedium?: string;
   brand?: string;
   country?: string;
+  conversationId?: string;
 }
 
 export interface MessagingInAppInterface {

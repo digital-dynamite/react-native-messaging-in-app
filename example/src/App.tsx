@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-import { launchChat } from 'react-native-messaging-in-app';
+import {
+  launchChat,
+  createConversationId,
+} from 'react-native-messaging-in-app';
 import type { MessagingConfig } from 'react-native-messaging-in-app';
 
 export default function App() {
@@ -9,6 +12,8 @@ export default function App() {
   const handleLaunchChat = async () => {
     setIsLoading(true);
     try {
+      // Generate a new UUID for this conversation
+      const conversationId = createConversationId();
       const config: MessagingConfig = {
         serviceAPI: 'https://your-service-api.com', // Replace with your actual service API
         organizationId: 'your-org-id', // Replace with your actual organization ID
@@ -18,6 +23,7 @@ export default function App() {
         chatMedium: 'mobile',
         brand: 'your-brand',
         country: 'US',
+        conversationId: conversationId,
       };
 
       await launchChat(config);

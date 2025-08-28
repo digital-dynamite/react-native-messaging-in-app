@@ -68,7 +68,14 @@ class MessagingModule: NSObject {
         DispatchQueue.main.async {
             // Create UI configuration with a new conversation ID
             // Note: For persistent conversations, use the same ID
-            let conversationId = UUID()
+            // Use conversation ID from React Native config if provided, otherwise generate a new one
+            let conversationId: UUID
+            if let conversationIdString = reactConfig["conversationId"] as? String,
+               let uuid = UUID(uuidString: conversationIdString) {
+                conversationId = uuid
+            } else {
+                conversationId = UUID()
+            }
             let uiConfig = UIConfiguration(
                 configuration: config,
                 conversationId: conversationId
@@ -81,14 +88,28 @@ class MessagingModule: NSObject {
             coreClient.preChatDelegate = GlobalHiddenPreChatDelegate.shared
 
             let chatVC = ModalInterfaceViewController(uiConfig)
-            chatVC.modalPresentationStyle = .fullScreen
-
+            chatVC.modalPresentationStyle = .popover
+            chatVC.modalDismissButton = UIBarButtonItem(
+                image: UIImage(systemName: "minus"),
+                style: .plain,
+                target: self,
+                action: #selector(self.dismissChat))
             if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
             let rootViewController = windowScene.windows.first?.rootViewController {
                 rootViewController.present(chatVC, animated: true)
                 resolve(nil)
             } else {
                 reject("ERROR", "Could not present chat interface", nil)
+            }
+        }
+    }
+
+    @objc
+    private func dismissChat() {
+        DispatchQueue.main.async {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+               let rootViewController = windowScene.windows.first?.rootViewController {
+                rootViewController.dismiss(animated: true)
             }
         }
     }
