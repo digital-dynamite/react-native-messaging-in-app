@@ -14,6 +14,9 @@ import SwiftUI
 
 @objc(MessagingModule)
 class MessagingModule: NSObject {
+    
+    private var currentConfig: [String: Any]?
+
     @objc
     static func requiresMainQueueSetup() -> Bool {
         return true
@@ -85,6 +88,21 @@ class MessagingModule: NSObject {
 
             // ✅ Create CoreClient and assign hidden pre-chat delegate
             let coreClient = CoreFactory.create(withConfig: uiConfig)
+
+             // 🔄 Check if this is a new config and reset storage if needed
+            let isNewConfig = self.currentConfig != nil && (
+                self.currentConfig?["serviceAPI"] as? String != reactConfig["serviceAPI"] as? String || 
+                self.currentConfig?["organizationId"] as? String != reactConfig["organizationId"] as? String ||
+                self.currentConfig?["developerName"] as? String != reactConfig["developerName"] as? String
+            )
+            
+            if isNewConfig && self.currentConfig != nil {
+                coreClient.destroyStorage(andAuthorization: true) { _ in }
+            }
+            
+            // Update current config
+            self.currentConfig = reactConfig
+            
             coreClient.preChatDelegate = GlobalHiddenPreChatDelegate.shared
 
             let chatVC = ModalInterfaceViewController(uiConfig)

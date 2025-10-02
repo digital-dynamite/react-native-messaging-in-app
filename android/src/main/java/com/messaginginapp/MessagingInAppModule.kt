@@ -9,8 +9,11 @@ import android.content.Context
 import java.util.UUID
 import java.net.URL
 import android.util.Log
+import kotlinx.coroutines.*
 
 class MessagingInAppModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+    
+    private var currentConfig: WritableMap? = null
 
     override fun getName(): String {
         return "MessagingModule"
@@ -52,8 +55,34 @@ class MessagingInAppModule(reactContext: ReactApplicationContext) : ReactContext
                 UUID.randomUUID()
             }
 
+             // 🔄 Check if this is a new config and reset storage if needed
+            val isNewConfig = currentConfig?.getString("serviceAPI") != config.getString("serviceAPI") ||
+                            currentConfig?.getString("organizationId") != config.getString("organizationId") ||
+                            currentConfig?.getString("developerName") != config.getString("developerName")
+
+            if (isNewConfig && this.currentConfig != null) {
+                CoroutineScope(Dispatchers.Main).launch {
+                    Log.d("MessagingModule", "Starting CoreClient.clearStorage operation")
+                    CoreClient.clearStorage(reactApplicationContext, clearAuthorization = true)
+                    Log.d("MessagingModule", "CoreClient.clearStorage operation completed")
+                }
+            }
+
             // Create a core client from the config
             val coreClient = CoreClient.Factory.create(reactApplicationContext, coreConfig)
+
+
+             // Update current config
+            this.currentConfig = Arguments.createMap().apply {
+                putString("serviceAPI", config.getString("serviceAPI"))
+                putString("organizationId", config.getString("organizationId"))
+                putString("developerName", config.getString("developerName"))
+                putString("conversationId", config.getString("conversationId"))
+                putString("language", config.getString("language"))
+                putString("chatMedium", config.getString("chatMedium"))
+                putString("brand", config.getString("brand"))
+                putString("country", config.getString("country"))
+            }
 
             // Register hidden pre-chat values provider
             coreClient.registerHiddenPreChatValuesProvider { input ->
