@@ -79,9 +79,21 @@ class MessagingModule: NSObject {
             } else {
                 conversationId = UUID()
             }
+            // Map language from config to locale code
+                let language = reactConfig["language"] as? String
+                let localeCode: String
+                switch language {
+                case "French":
+                    localeCode = "fr"
+                case "English":
+                    localeCode = "en"
+                default:
+                    localeCode = "en" // default to English
+                }
             let uiConfig = UIConfiguration(
                 configuration: config,
-                conversationId: conversationId
+                conversationId: conversationId,
+                remoteLocaleMap: ["default": localeCode],
             )
          
             uiConfig.conversationOptionsConfiguration = ConversationOptionsConfiguration(allowEndChat: true)

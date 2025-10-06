@@ -41,7 +41,16 @@ class MessagingInAppModule(reactContext: ReactApplicationContext) : ReactContext
 
             // Create Core configuration
             val url = URL(serviceAPI)
-            val coreConfig = CoreConfiguration(url, organizationId, developerName)
+
+            // Map language from config to locale code
+            val language = config.getString("language")
+            val localeCode = when (language) {
+                "French" -> "fr"
+                "English" -> "en"
+                else -> "en" // default to English
+            }
+
+            val coreConfig = CoreConfiguration(url, organizationId, developerName, remoteLocaleMap = mapOf("default" to localeCode))
 
             // Use conversation ID from config if provided, otherwise generate a new one
             val conversationID = if (config.hasKey("conversationId")) {
@@ -60,7 +69,7 @@ class MessagingInAppModule(reactContext: ReactApplicationContext) : ReactContext
                             currentConfig?.getString("organizationId") != config.getString("organizationId") ||
                             currentConfig?.getString("developerName") != config.getString("developerName")
 
-            if (isNewConfig && this.currentConfig != null) {
+            if (isNewConfig) {
                 CoroutineScope(Dispatchers.Main).launch {
                     Log.d("MessagingModule", "Starting CoreClient.clearStorage operation")
                     CoreClient.clearStorage(reactApplicationContext, clearAuthorization = true)
